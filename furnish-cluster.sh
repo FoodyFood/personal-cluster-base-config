@@ -14,7 +14,7 @@ printf "\n\n"
 
 printf "Installing Cert Manager\n\n"
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.1.0/cert-manager.crds.yaml
-helm install cert-manager --namespace cert-manager jetstack/cert-manager --create-namespace
+helm install cert-manager --namespace cert-manager jetstack/cert-manager --set controller.kind=daemonset --create-namespace
 printf "\n\n"
 kubectl create -f ./cert-manager-issuers.yaml --namespace cert-manager
 printf "\n\n"
