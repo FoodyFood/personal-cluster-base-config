@@ -9,6 +9,7 @@ If you are to use this for your own cluster, change the email address in the cer
 ## Installed charts
 
 nginx-stable/nginx-ingress
+
 jetstack/cert-manager
 
 <br>
@@ -16,4 +17,5 @@ jetstack/cert-manager
 ## Installed CRDs
 
 letsencrypt-prod
+
 letsencrypt-staging
