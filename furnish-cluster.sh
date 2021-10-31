@@ -8,7 +8,7 @@ printf "\n\n"
 
 
 printf "Installing NGINX Ingress\n\n"
-helm install nginx nginx-stable/nginx-ingress -n nginx --set controller.kind=daemonset --create-namespace
+helm install nginx nginx-stable/nginx-ingress -n nginx --set controller.kind=daemonset --set controller.setAsDefaultIngress=true --create-namespace
 printf "\n\n"
 
 
