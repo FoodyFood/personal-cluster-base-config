@@ -22,6 +22,7 @@ Run the following to install the bare escentials in your newly made cluster
 ```bash
 ./furnish-cluster.sh
 ```
+<br>
 
 ### Installed charts
 
@@ -29,7 +30,6 @@ nginx-stable/nginx-ingress
 
 jetstack/cert-manager
 
-<br>
 
 ### Installed CRDs
 
